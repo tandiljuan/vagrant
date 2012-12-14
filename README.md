@@ -12,7 +12,7 @@ To have a local dev environment, you must do the following steps.
 
 First of all you need to [install vagrant](http://vagrantup.com/v1/docs/getting-started/index.html).
 
-Download the [Vagrant box's configuration files](https://github.com/zehnergroup/vagrant-lamp/archive/master.zip)
+Download the [Vagrant box's configuration files](https://github.com/tandiljuan/vagrant-lamp/archive/master.zip)
 and uncompress the downloaded zip file.
 
 > In the extracted directory, edit the `data_bags/sites/local.json` file and
@@ -63,7 +63,7 @@ Update you git's name and email, editing the .gitconfig file or by git commands.
 ### Update the "hosts" file in the HOST machine
 
 Edit the [hosts](http://en.wikipedia.org/wiki/Hosts_%28file%29%23Location_in_the_file_system)
-file and add the following line. If you want to use a different development domain, edit the `data_bags/sites/local.json`
+file and add the following line.
 
     192.168.50.20    CHOSEN_DOMAIN_NAME
 
