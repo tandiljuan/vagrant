@@ -10,3 +10,14 @@
 ehthumbs.db
 Icon?
 Thumbs.db
+
+# Vagrant / Berkshelf files #
+#############################
+.vagrant
+Berksfile.lock
+*#
+.#*
+\#*#
+.*.sw[a-z]
+*.un~
+/cookbooks
