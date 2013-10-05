@@ -3,8 +3,17 @@ name 'development'
 
 # Override the default settings on a node.
 override_attributes(
+  'smbfs' => {
+    'install' => false,
+    'mounts' => {
+      '/dummy/mount/point' => {
+        'cifs_path' => '//dummi/cifs/path'
+      }
+    }
+  }
 )
 
 # Run list function
 run_list(
+    'recipe[cookbook-core::init]'
 )
