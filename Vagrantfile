@@ -67,4 +67,9 @@ Vagrant.configure("2") do |config|
   # to skip installing and copying to Vagrant's shelf.
   # config.berkshelf.except = []
 
+  config.vm.provision :chef_solo do |chef|
+    chef.roles_path = "chef/roles"
+    chef.add_role "development"
+  end
+
 end
