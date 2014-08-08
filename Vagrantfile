@@ -92,7 +92,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     #chef.log_level = 'debug'
     #chef.verbose_logging = true
     chef.roles_path = "chef/roles"
-    chef.add_role "development"
+    chef.add_role "default"
   end
 
 end
