@@ -64,6 +64,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #  # http://stackoverflow.com/questions/13716012/vagrant-shared-folder-symlinks
   #  # http://ahtik.com/blog/2012/08/16/fixing-your-virtualbox-shared-folder-symlink-error/
   #  vb.customize ["setextradata", :id, "VBoxInternal2/SharedFoldersEnableSymlinksCreate/code_root", "1"]
+  #  # http://serverfault.com/a/595010
+  #  vb.customize ["modifyvm", :id, "--natdnshostresolver1", "on"]
+  #  vb.customize ["modifyvm", :id, "--natdnsproxy1", "on"]
   #end
 
   # View the documentation for the provider you're using for more
