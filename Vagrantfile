@@ -88,6 +88,9 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # config.berkshelf.except = []
 
   config.vm.provision :chef_solo do |chef|
+    # Uncomment to debug Chef Cookbooks
+    #chef.log_level = 'debug'
+    #chef.verbose_logging = true
     chef.roles_path = "chef/roles"
     chef.add_role "development"
   end
