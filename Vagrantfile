@@ -37,6 +37,21 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # argument is a set of non-required options.
   config.vm.synced_folder "./workspace", "/opt/vboxsf/workspace"
 
+  # Uncomment to share folder through NFS
+  #config.vm.synced_folder "./workspace", "/opt/nfs/workspace", :nfs => true
+  ## http://stackoverflow.com/a/23842244
+  #config.bindfs.bind_folder "/opt/nfs/workspace", "/opt/workspace",
+  #    :owner => "vagrant",
+  #    :group => "vagrant",
+  #    :'create-as-user' => true,
+  #    :perms => "0644,a+X",
+  #    :'create-with-perms' => "0644,a+X"
+  #    #:perms => "u=rwx:g=rwx:o=rwx",
+  #    #:'create-with-perms' => "u=rwx:g=rwx:o=rwx",
+  #    #:'chown-ignore' => true,
+  #    #:'chgrp-ignore' => true,
+  #    #:'chmod-ignore' => true
+
   # Provider-specific configuration so you can fine-tune various
   # backing providers for Vagrant. These expose provider-specific options.
   # Example for VirtualBox:
