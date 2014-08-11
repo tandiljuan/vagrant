@@ -76,6 +76,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # option to your ~/.vagrant.d/Vagrantfile file
   config.berkshelf.enabled = true
 
+  # Set the version of Chef to be installed in the guest
+  config.omnibus.chef_version = "11.14.2"
 
   config.vm.provision :chef_solo do |chef|
     # Uncomment to debug Chef Cookbooks
