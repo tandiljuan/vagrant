@@ -1,5 +1,5 @@
 # Name of the role. Must match the name of the file
-name 'core'
+name 'lamp'
 
 # Override the default settings on a node.
 override_attributes(
@@ -15,5 +15,5 @@ override_attributes(
 
 # Run list function
 run_list(
-    'recipe[cookbook-core]'
+    'recipe[cookbook-lamp]'
 )
