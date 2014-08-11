@@ -15,5 +15,5 @@ override_attributes(
 
 # Run list function
 run_list(
-    'recipe[cookbook-core::init]'
+    'recipe[cookbook-core]'
 )
