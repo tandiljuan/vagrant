@@ -1,5 +1,5 @@
 # Name of the role. Must match the name of the file
-name 'development'
+name 'core'
 
 # Override the default settings on a node.
 override_attributes(
