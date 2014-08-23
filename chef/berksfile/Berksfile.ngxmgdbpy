@@ -1,0 +1,3 @@
+source "https://supermarket.getchef.com"
+
+cookbook 'cookbook-ngxmgdbpy', github: 'tandiljuan/cookbook-ngxmgdbpy'
