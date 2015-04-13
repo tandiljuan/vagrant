@@ -54,6 +54,11 @@ Copy and edit the configuration files needed to run Vagrant.
     cp chef/roles/core.rb chef/roles_enabled/
     cp Vagrantfile.base Vagrantfile
 
+Or execute the `init.sh` script to create the configuration files automatically.
+Later you'll have to tune the files to your needs.
+
+    ./init.sh -r core
+
 ### 5. Start (init) the VM with Vagrant
 
     vagrant up
