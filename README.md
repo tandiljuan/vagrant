@@ -51,6 +51,7 @@ Install Vagrant plugins
 Copy and edit the configuration files needed to run Vagrant.
 
     cp chef/berksfile/Berksfile.core Berksfile
+    cp chef/roles/core.rb chef/roles_enabled/
     cp Vagrantfile.base Vagrantfile
 
 ### 5. Start (init) the VM with Vagrant
