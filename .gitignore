@@ -23,6 +23,7 @@ Vagrantfile
 .*.sw[a-z]
 *.un~
 /cookbooks
+/chef/roles_enabled/
 
 # Ignore Workspace directory #
 ##############################
