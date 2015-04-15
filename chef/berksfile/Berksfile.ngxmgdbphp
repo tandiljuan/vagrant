@@ -4,3 +4,7 @@ cookbook "mongodb", github: "edelight/chef-mongodb", ref: "b27564fc57bd87be775a0
 cookbook 'cookbook-core', github: 'tandiljuan/cookbook-core'
 cookbook 'cookbook-ngxmgdbphp', github: 'tandiljuan/cookbook-ngxmgdbphp'
 
+# Example on how to access a private cookbook repository
+# @see http://stackoverflow.com/a/26217038
+# cookbook 'foo', git: 'git@bitbucket.org/username/cookbook-foo.git'
+
