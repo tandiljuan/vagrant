@@ -1,3 +1,8 @@
 source "https://supermarket.getchef.com"
 
 cookbook 'cookbook-core', github: 'tandiljuan/cookbook-core'
+
+# Example on how to access a private cookbook repository
+# @see http://stackoverflow.com/a/26217038
+# cookbook 'foo', git: 'git@bitbucket.org/username/cookbook-foo.git'
+
